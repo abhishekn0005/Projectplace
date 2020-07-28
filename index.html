@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>goldenHead</title>
   <style>
 
@@ -10,11 +10,42 @@
       max-width: 100%;
       height: auto;
     }
+
+    body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+
+
+
+ul.topnav li.center {float: center;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.center,
+     ul.topnav li {float: none;}
+}
   </style>
 </head>
 
   <body>
-    <h2>HTML Image</h2>
+    
+    <ul class="topnav">
+      <li class="center"><a href="index.html"><b>gH</b></a></li>
+    </ul>
+    
     <img src="Images/b10.jpg" alt="Main Image">
   </body>
 
