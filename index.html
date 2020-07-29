@@ -6,47 +6,61 @@
   <title>goldenHead</title>
   <style>
 
-    img {
+  img {
       max-width: 100%;
       height: auto;
     }
 
-    body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #111;
-}
+  body {margin: 0;}
 
 
+  #nav {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+  }
 
-ul.topnav li.center {float: center;}
+  #nav li {
+    display: inline-block;
+    text-align: center; 
+  }
+  
+  #nav li a {
+    display: block;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    color: lawngreen;
+    }
 
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.center,
-     ul.topnav li {float: none;}
-}
+  @media screen and (max-width: 600px) {
+     ul.nav li {float: none;}
+    }
+    /* End navigation bar styling. */
   </style>
+
+  <script src="https://kit.fontawesome.com/8f02f80272.js" crossorigin="anonymous"></script>
+
 </head>
 
-  <body>
-    
-    <ul class="topnav">
-      <li class="center"><a href="index.html"><b>gH</b></a></li>
-    </ul>
-    
-    <img src="Images/b10.jpg" alt="Main Image">
+<body>
+
+  <ul id="nav">
+    <li style="float: left;"><a href="#"><i class="fas fa-bars"></i></a></li>
+    <li><a href="#">goldenHead</a></li>
+    <li style="float: right;"><a href="#">Quotes</a></li>
+  </ul>
+
+  <img src="Images/b12.jpg" alt="Main Image">
+
   </body>
 
 </html>
