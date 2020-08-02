@@ -38,13 +38,33 @@
     font-size: 20px;
     font-weight: bold;
     text-align:center;
-    color: lawngreen;
+    color: gold;
     }
 
   @media screen and (max-width: 600px) {
      ul.nav li {float: none;}
     }
     /* End navigation bar styling. */
+
+  .tagline{
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+  }  
+
+  .grid-container {
+    display: grid;
+    margin-top: 0px;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 50px;
+}
+
+  .grid-item {
+    background-color: gold;
+    text-align: center;
+}
   </style>
 
   <script src="https://kit.fontawesome.com/8f02f80272.js" crossorigin="anonymous"></script>
@@ -56,10 +76,18 @@
   <ul id="nav">
     <li style="float: left;"><a href="#"><i class="fas fa-bars"></i></a></li>
     <li><a href="#">goldenHead</a></li>
-    <li style="float: right;"><a href="#">Quotes</a></li>
+    <li style="float: right;"><a href="#"><i class="far fa-bell"></i></a></li>
   </ul>
 
-  <img src="Images/b12.jpg" alt="Main Image">
+  <img src="Images/b10.jpg" alt="Main Image">
+
+  <h1 class="tagline">Create.Motivate.Inspire</h1>
+
+  <div class="grid-container">
+    <div class="grid-item"><a href=""><img src="Images/b13.jpg" alt=""></a></div>
+    <div class="grid-item"><a href=""><img src="Images/b17.jpg" alt=""></a></div>
+    <div class="grid-item"><a href=""><img src="Images/b12.jpg" alt=""></a></div>    
+  </div>
 
   </body>
 
