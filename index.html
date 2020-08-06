@@ -18,8 +18,11 @@ body {margin: 0;}
     }
 
   .topnav{
-    position: relative;
+    position: sticky;
     width: 100%;
+    position: -webkit-sticky;
+    overflow: hidden;
+    top: 0;
   }
 
   .heading{
@@ -61,15 +64,12 @@ body {margin: 0;}
 
     /* End navigation bar styling. */
 
-  #alignimage{
-    top: auto;
-  }
-
   .column{
+    top: 0;
     float:left;
     width: 33.33%;
     padding: 15px;
-    background-color: gold;
+    background-color: black;
   }
 
   .row{
@@ -77,22 +77,6 @@ body {margin: 0;}
     display: table;
     clear: both;
   }  
-
-  .grid-container {
-    display: grid;
-    margin-top: 0px;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto auto;
-    background-color: black;
-    padding: 50px;
-}
-
-  .grid-item {
-    background-color: gold;
-    border: 1px solid;
-    border-color: gold;
-    text-align: center;
-}
 
   @media screen and (max-width: 600px) {
     .tagline, .heading{
@@ -118,7 +102,7 @@ body {margin: 0;}
   </ul>
   </div>
 
-  <div id="alignimage">
+  <div>
 
     <img src="Images/b10.jpg" alt="Main Image">
     </div>
