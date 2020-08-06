@@ -6,6 +6,10 @@
   <title>goldenHead</title>
   <style>
 
+* {
+  box-sizing: border-box;
+}
+
 body {margin: 0;}
 
   img {
@@ -59,8 +63,19 @@ body {margin: 0;}
 
   #alignimage{
     top: auto;
+  }
+
+  .column{
+    float:left;
+    width: 33.33%;
+    padding: 15px;
+  }
+
+  .row{
+    content: '''';
+    display: table;
+    clear: both;
   }  
- 
 
   .grid-container {
     display: grid;
@@ -81,6 +96,8 @@ body {margin: 0;}
   @media screen and (max-width: 600px) {
     .tagline, .heading{
       font-size: 36px;}
+    .grid-container, .grid-item{
+        width: 100%;}
     }
     
   </style>
@@ -103,12 +120,12 @@ body {margin: 0;}
   <div id="alignimage">
 
   <img src="Images/b10.jpg" alt="Main Image">
-</div><br>
+  </div><br>
 
-  <div class="grid-container">
-    <div class="grid-item"><a href=""><img src="Images/b13.jpg" alt=""></a></div>
-    <div class="grid-item"><a href=""><img src="Images/b17.jpg" alt=""></a></div>
-    <div class="grid-item"><a href=""><img src="Images/b12.jpg" alt=""></a></div>    
+  <div class="row">
+    <div class="column"><a href=""><img src="Images/b13.jpg" alt=""></a></div>
+    <div class="column"><a href=""><img src="Images/b17.jpg" alt=""></a></div>
+    <div class="column"><a href=""><img src="Images/b12.jpg" alt=""></a></div>  
   </div>
 
   </body>
