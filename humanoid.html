@@ -82,7 +82,7 @@ body {
     document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
       var adobeDCView = new AdobeDC.View({clientId: "56d063d530b146c09e346e6387fab137", divId: "adobe-dc-view"});
       adobeDCView.previewFile({
-        content:{location: {url: "https://drive.google.com/file/d/1-8hjmXmfFCQmxUXdqFCVJNLczac7JMVk/view?usp=sharing/Report.pdf"}},
+        content:{location: {url: "Report.pdf"}},
         metaData:{fileName: "Report.pdf"}
       }, {});
     });
