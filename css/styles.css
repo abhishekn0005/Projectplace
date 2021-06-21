@@ -3,7 +3,8 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
+    background-color: rgb(116, 114, 114);
 }
 
 img {
@@ -11,18 +12,16 @@ img {
     height: auto;
 }
 
-.topnav {
-    position: sticky;
-    width: 100%;
-    position: -webkit-sticky;
-    overflow: hidden;
+.navcontainer{
     top: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .heading {
-    margin: 0;
+    margin-top: 60px;
     padding: 20px;
-    top: 0;
     display: block;
     background-color: #131313;
     text-align: center;
@@ -59,40 +58,59 @@ img {
 
 /* End navigation bar styling. */
 
-.column {
-    top: 0;
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-    background-color: black;
-    margin: 0 auto;
-}
-
-.row {
+.row{
     content: '''';
     display: table;
     clear: both;
 }
 
-.column .content {
-    bottom: 0;
-    text-align: center;
-    background: rgb(0, 0, 0);
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-    font-size: 26px;
-    font-family: Arial;
+.leftcolumn {   
+    float: left;
+    width: 50%;
+    padding-left: 80px;
+  }
+
+.contrast{
+    color: #f5f5f7;
+    font-weight: bold;
 }
+
+.pdime {
+    width: 80%;
+    color: #f5f5f7;
+}
+
+  /* Right column */
+    .rightcolumn {
+    float: left;
+    width: 50%;
+    padding-left: 60px;
+  } 
+
+  /* Fake image */
+    .shortimg {
+    height: 300px;
+    width: 80%;
+  }
+
+  /* Add a card effect for articles */
+    .card1{
+    background-color:  rgb(116, 114, 114);
+    padding: 20px;
+  }
+
+    .card2{
+    background-color:  rgb(116, 114, 114);
+    padding: 20px;
+    margin-top: 20px;
+  }
 
 .footer {
     background-color: black;
     color: gold;
     text-align: center;
     padding: 20px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
