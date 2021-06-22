@@ -126,6 +126,9 @@ img {
     .rightcolumn, .leftcolumn{
     width: 50%;
     }
+    .contrast{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -134,7 +137,10 @@ img {
     }
     .rightcolumn, .leftcolumn{
     width: 100%;
-    padding: 15%;
+    padding: 0%;
+    }
+    .contrast{
+        font-size: 20px;
     }
 }
 
@@ -143,12 +149,6 @@ img {
 @media screen and (max-width: 768px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .contrast{
-        font-size: 20px;
     }
 }
 
