@@ -124,7 +124,7 @@ img {
         font-size: 36px;
     }
     .rightcolumn, .leftcolumn{
-    width: 50%;
+    width: 100%;
     }
     .contrast{
         font-size: 20px;
@@ -139,31 +139,10 @@ img {
     width: 100%;
     padding: 0%;
     }
+}
+
+@media screen and (max-width: 992px) {
     .contrast{
-        font-size: 20px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media screen and (max-width: 768px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media screen and (min-width: 992px) {
-    .column .content {
         font-size: 22px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media screen and (min-width: 1200px) {
-    .column .content {
-        font-size: 28px;
     }
 }
