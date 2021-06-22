@@ -4,13 +4,16 @@
 
 body {
     margin: 0px;
-    background-color: rgb(116, 114, 114);
+    background-color: grey;
 }
 
 img {
-    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     height: auto;
-}
+  }
 
 .navcontainer{
     top: 0;
@@ -67,48 +70,46 @@ img {
 .leftcolumn {   
     float: left;
     width: 50%;
-    padding-left: 80px;
+    padding-left: 7%;
+    padding-right: 3%;
   }
 
+.rightcolumn {
+    float: left;
+    width: 50%;
+    padding-right: 7%;
+    padding-left: 3%;
+  } 
+    
 .contrast{
     color: #f5f5f7;
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
 }
 
 .contrast1{
     color: #f5f5f7;
     font-size: 14px;
+    text-align: center;
 }
 
 .pdime {
-    width: 80%;
+    text-align: justify;
     color: #f5f5f7;
+    vertical-align: middle;
 }
 
-  /* Right column */
-    .rightcolumn {
-    float: left;
-    width: 50%;
-    padding-left: 60px;
-  } 
-
-  /* Fake image */
-    .shortimg {
-    height: 300px;
-    width: 80%;
-  }
-
-  /* Add a card effect for articles */
-    .card1{
-    background-color:  rgb(116, 114, 114);
+.card1{
+    background-color: #131313;
     padding: 20px;
   }
 
-    .card2{
-    background-color:  rgb(116, 114, 114);
+.card2{
+    background-color: #131313;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 .footer {
@@ -117,6 +118,7 @@ img {
     text-align: center;
     padding: 20px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -125,9 +127,11 @@ img {
     }
     .rightcolumn, .leftcolumn{
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     }
     .contrast{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -143,6 +147,6 @@ img {
 
 @media screen and (max-width: 992px) {
     .contrast{
-        font-size: 22px;
+        font-size: 20px;
     }
 }
