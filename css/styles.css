@@ -198,6 +198,12 @@ img {
     border-radius: 10px;
 }
 
+#details{
+    color: white;
+    font-size: 16px;
+    margin: 5%;
+}
+
 @media screen and (max-width: 800px) {
     .heading {
         font-size: 36px;
